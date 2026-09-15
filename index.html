@@ -1,0 +1,179 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>CCIE Automation documentation</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { --ink:#1a1a1a; --dim:#666; --line:#e3e3e3; --link:#1668b8; --bg:#f2f2f2; }
+  * { box-sizing:border-box }
+  body { margin:0; padding:26px 30px 40px; background:var(--bg); color:var(--ink);
+         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif }
+  h1 { font-size:30px; font-weight:700; margin:0 0 4px }
+  h1 span { color:#2e7bb8; font-weight:600 }
+  .sub { color:var(--dim); font-size:13px; margin:0 0 18px; padding-bottom:16px;
+         border-bottom:1px solid #d2d2d2 }
+  .cols { display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:22px; align-items:start }
+  .card { background:#fff; border:1px solid var(--line); border-radius:3px; padding:20px 24px 22px; margin-bottom:22px }
+  h2 { font-size:12px; font-weight:700; letter-spacing:.7px; text-transform:uppercase;
+       margin:0 0 14px; padding-bottom:10px; border-bottom:1px solid var(--line) }
+  ul { margin:0; padding-left:20px }
+  li { margin:5px 0 }
+  a { color:var(--link); text-decoration:none }
+  a:hover { text-decoration:underline }
+  .v { color:var(--dim); font-size:12px }
+  .note { background:#fff8e8; border-left:3px solid #e0a020; padding:14px 18px;
+          margin-top:8px; font-size:13px; border-radius:2px }
+  .note ul { padding-left:18px }
+  .note li { margin:6px 0 }
+  footer { margin-top:26px; color:var(--dim); font-size:12px }
+</style>
+
+<h1>CCIE Automation Documentation <span>&mdash; hiTech007</span></h1>
+<p class="sub">Reference for the CCIE Automation lab exam. Software as installed on the
+   hiTech007 lab workstation, with links to the current documentation for each.</p>
+
+<div class="cols">
+
+  <div>
+    <div class="card">
+      <h2>Python and Python libraries</h2>
+      <ul>
+        <li><a href="https://docs.python.org/3/">Python 3</a> <span class="v">3.12 here, 3.13 in the exam</span></li>
+        <li><a href="https://click.palletsprojects.com/">click</a></li>
+        <li><a href="https://flask.palletsprojects.com/">Flask</a> |
+            <a href="https://flask-restx.readthedocs.io/">Flask-RESTX</a></li>
+        <li><a href="https://fastapi.tiangolo.com/">FastAPI</a></li>
+        <li><a href="https://hvac.readthedocs.io/">hvac</a> <span class="v">Vault client</span></li>
+        <li><a href="https://jinja.palletsprojects.com/">Jinja2</a></li>
+        <li><a href="https://lxml.de/">lxml</a></li>
+        <li><a href="https://ncclient.readthedocs.io/">ncclient</a></li>
+        <li><a href="https://ktbyers.github.io/netmiko/docs/netmiko/index.html">netmiko</a> |
+            <a href="https://github.com/ktbyers/netmiko/tree/develop/examples">examples</a></li>
+        <li><a href="https://github.com/networktocode/ntc-templates">ntc-templates</a></li>
+        <li><a href="https://docs.paramiko.org/">paramiko</a></li>
+        <li><a href="https://github.com/mbj4668/pyang/wiki">pyang</a></li>
+        <li><a href="https://pyyaml.org/wiki/PyYAMLDocumentation">PyYAML</a></li>
+        <li><a href="https://requests.readthedocs.io/">requests</a></li>
+        <li><a href="https://yaml.readthedocs.io/">ruamel.yaml</a></li>
+        <li><a href="https://carlmontanari.github.io/scrapli/">scrapli</a> |
+            <a href="https://scrapli.github.io/scrapli_netconf/">scrapli-netconf</a></li>
+        <li><a href="https://github.com/google/textfsm/wiki/TextFSM">TextFSM</a></li>
+        <li><a href="https://github.com/martinblech/xmltodict">xmltodict</a></li>
+        <li><a href="https://pubhub.devnetcloud.com/media/pyats/docs/index.html">pyATS</a> |
+            <a href="https://pubhub.devnetcloud.com/media/pyats-getting-started/docs/index.html">getting started</a></li>
+        <li><a href="https://pubhub.devnetcloud.com/media/genie-docs/docs/index.html">Genie</a></li>
+        <li><a href="https://pubhub.devnetcloud.com/media/unicon/docs/index.html">Unicon</a></li>
+        <li><a href="https://nornir.readthedocs.io/">Nornir</a></li>
+        <li><a href="https://docs.astral.sh/uv/">uv</a> <span class="v">environments and locking</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <div class="card">
+      <h2>Third party software</h2>
+      <ul>
+        <li><a href="https://docs.ansible.com/ansible/latest/">Ansible</a> |
+            <a href="https://docs.ansible.com/ansible/latest/collections/cisco/aci/index.html">cisco.aci collection</a></li>
+        <li><a href="https://docs.docker.com/">Docker</a> |
+            <a href="https://docs.docker.com/compose/">Compose</a></li>
+        <li><a href="https://git-scm.com/doc">Git</a></li>
+        <li><a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a> |
+            <a href="https://docs.gitlab.com/ee/api/">API</a></li>
+        <li><a href="https://grafana.com/docs/grafana/latest/">Grafana</a></li>
+        <li><a href="https://developer.hashicorp.com/vault/docs">HashiCorp Vault</a> |
+            <a href="https://developer.hashicorp.com/vault/api-docs">API</a></li>
+        <li><a href="https://docs.influxdata.com/influxdb3/core/">InfluxDB 3</a></li>
+        <li><a href="https://kubernetes.io/docs/home/">Kubernetes</a> |
+            <a href="https://kubernetes.io/docs/reference/kubectl/">kubectl</a></li>
+        <li><a href="https://nginx.org/en/docs/">nginx</a></li>
+        <li><a href="https://www.openssl.org/docs/">OpenSSL</a></li>
+        <li><a href="https://docs.usebruno.com/">Bruno</a></li>
+        <li><a href="https://docs.influxdata.com/telegraf/v1/">Telegraf</a> |
+            <a href="https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cisco_telemetry_mdt">Cisco MDT plugin</a></li>
+        <li><a href="https://developer.hashicorp.com/terraform/docs">Terraform</a></li>
+        <li><a href="https://curl.se/docs/manpage.html">cURL</a></li>
+        <li><a href="https://jqlang.github.io/jq/manual/">jq</a></li>
+        <li><a href="https://direnv.net/">direnv</a></li>
+        <li><a href="https://docs.zammad.org/en/latest/api/intro.html">Zammad API</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Terraform ACI provider</h2>
+      <ul>
+        <li><a href="https://registry.terraform.io/providers/CiscoDevNet/aci/latest/docs">Provider</a></li>
+        <li><a href="https://registry.terraform.io/providers/CiscoDevNet/aci/latest/docs/resources/tenant">Tenant</a></li>
+        <li><a href="https://registry.terraform.io/providers/CiscoDevNet/aci/latest/docs/resources/application_profile">Application profile</a></li>
+        <li><a href="https://registry.terraform.io/providers/CiscoDevNet/aci/latest/docs/resources/application_epg">Application EPG</a></li>
+        <li><a href="https://registry.terraform.io/providers/CiscoDevNet/aci/latest/docs/resources/bridge_domain">Bridge domain</a></li>
+        <li><a href="https://registry.terraform.io/providers/CiscoDevNet/aci/latest/docs/resources/contract">Contract</a></li>
+        <li><a href="https://registry.terraform.io/providers/CiscoDevNet/aci/latest/docs/resources/epg_to_contract">EPG to contract</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <div class="card">
+      <h2>Standards and specifications</h2>
+      <ul>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc6241">RFC 6241</a> &mdash; NETCONF</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc6242">RFC 6242</a> &mdash; NETCONF over SSH</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc5277">RFC 5277</a> &mdash; NETCONF event notifications</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc8040">RFC 8040</a> &mdash; RESTCONF</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc7950">RFC 7950</a> &mdash; YANG 1.1</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc6991">RFC 6991</a> &mdash; common YANG types</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc8342">RFC 8342</a> &mdash; NMDA</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc8341">RFC 8341</a> &mdash; NETCONF access control</li>
+        <li><a href="https://www.w3.org/TR/xpath-31/">XPath 3.1</a></li>
+        <li><a href="https://grpc.io/docs/">gRPC</a></li>
+        <li><a href="https://www.openconfig.net/docs/gnmi/gnmi-specification/">gNMI</a></li>
+        <li><a href="https://graphql.org/learn/">GraphQL</a></li>
+        <li><a href="https://swagger.io/specification/">OpenAPI</a></li>
+        <li><a href="https://owasp.org/www-project-top-ten/">OWASP Top Ten</a> |
+            <a href="https://cheatsheetseries.owasp.org/">cheat sheets</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Cisco documentation</h2>
+      <ul>
+        <li><a href="https://developer.cisco.com/docs/">Cisco DevNet</a></li>
+        <li><a href="https://www.cisco.com/c/en/us/support/index.html">Cisco Support</a></li>
+        <li><a href="https://developer.cisco.com/docs/nso/">NSO</a> |
+            <a href="https://developer.cisco.com/docs/nso/guides/">guides</a></li>
+        <li><a href="https://developer.cisco.com/docs/nso/api/">NSO Python API</a></li>
+        <li><a href="https://developer.cisco.com/docs/aci/">ACI programmability</a></li>
+        <li><a href="https://www.cisco.com/c/en/us/td/docs/dcn/aci/apic/all/apic-rest-api-configuration-guide/cisco-apic-rest-api-configuration-guide-42x-and-later/m_using_the_rest_api.html">APIC REST API guide</a></li>
+        <li><a href="https://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-xe-17/217427-configure-model-driven-telemetry-on-cisc.html">Model-driven telemetry on IOS-XE</a></li>
+        <li><a href="https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/171/b_171_programmability_cg.html">IOS-XE programmability</a></li>
+        <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x.html">NX-OS programmability</a></li>
+        <li><a href="https://developer.cisco.com/docs/cisco-nexus-3000-and-9000-series-nx-api-rest-sdk-user-guide-and-api-reference-release-9-3x/cisco-nexus-3000-and-9000-series-nx-api-rest-sdk-user-guide-and-api-reference-release-9-3x/">NX-API REST reference</a></li>
+        <li><a href="https://www.cisco.com/c/en/us/support/docs/storage-networking/management/200933-YANG-NETCONF-Configuration-Validation.html">YANG/NETCONF configuration validation</a></li>
+        <li><a href="https://developer.cisco.com/docs/catalyst-center/2-3-7-9/overview/#cisco-catalyst-center-platform-overview">Catalyst Center (DNAC) API</a></li>
+        <li><a href="https://developer.cisco.com/docs/yangsuite/">YANG Suite</a></li>
+        <li><a href="https://github.com/YangModels/yang/tree/main/vendor/cisco">Cisco YANG models</a></li>
+        <li><a href="https://learningnetwork.cisco.com/s/ccie-automation-exam-topics">CCIE Automation exam topics</a></li>
+        <li><a href="https://learningnetwork.cisco.com/s/article/ccie-automation-v1-1-equipment-and-software-list">Equipment and software list (v1.1)</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="note">
+  <b>Worth knowing before the day</b>
+  <ul>
+    <li>NSO <b>6.7</b> in the hiTech007 lab, <b>6.5</b> in the exam. The Python API is unchanged.</li>
+    <li>Python <b>3.12</b> in the lab, <b>3.13</b> in the exam.</li>
+    <li>GitLab <b>18.9</b> in the lab, <b>18.4</b> in the exam.</li>
+    <li>The exam workstation runs GNOME; the lab runs XFCE. Same tools, different appearance.</li>
+    <li>⚠️ <b>The exam gives you this documentation inside the workstation.</b> The lab
+        workstation has no internet, so read this page on your own machine &mdash; and be aware
+        that on the day you will not be able to switch to a second screen for it.</li>
+  </ul>
+</div>
+
+<footer>
+  Compiled from Cisco's published equipment and software list for the CCIE Automation
+  (v1.1) lab exam, adjusted to the software actually installed here.
+</footer>
