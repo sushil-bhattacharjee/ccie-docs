@@ -2,13 +2,20 @@
 <meta charset="utf-8">
 <title>CCIE Automation documentation</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&text=hiTech007&display=swap" rel="stylesheet">
 <style>
   :root { --ink:#1a1a1a; --dim:#666; --line:#e3e3e3; --link:#1668b8; --bg:#f2f2f2; }
   * { box-sizing:border-box }
   body { margin:0; padding:26px 30px 40px; background:var(--bg); color:var(--ink);
          font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif }
   h1 { font-size:30px; font-weight:700; margin:0 0 4px }
-  h1 span { color:#2e7bb8; font-weight:600 }
+  h1 .dash { color:#2e7bb8; font-weight:600 }
+  /* the company name, the same on every hiTech007 site: hi #0969da · Tech #1a7f37 · 007 #cf222e, Poppins 700 */
+  a.hx-logo { font-family:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight:700; letter-spacing:-.01em;
+              text-decoration:none; white-space:nowrap }
+  a.hx-logo:hover { text-decoration:none }
+  a.hx-logo .hb { color:#0969da } a.hx-logo .hg { color:#1a7f37 } a.hx-logo .hr { color:#cf222e }
   .sub { color:var(--dim); font-size:13px; margin:0 0 18px; padding-bottom:16px;
          border-bottom:1px solid #d2d2d2 }
   .cols { display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:22px; align-items:start }
@@ -41,7 +48,7 @@
   a.first { outline:2px solid var(--link); outline-offset:2px; border-radius:2px }
 </style>
 
-<h1>CCIE Automation Documentation <span>&mdash; hiTech007</span></h1>
+<h1>CCIE Automation Documentation <span class="dash">&mdash;</span> <a class="hx-logo" href="https://hitech007.ai/" target="_blank" rel="noopener" title="hiTech007" aria-label="hiTech007"><span class="hb">hi</span><span class="hg">Tech</span><span class="hr">007</span></a></h1>
 <p class="sub">Reference for the CCIE Automation lab exam. Software as installed on the
    hiTech007 lab workstation, with links to the current documentation for each.</p>
 
